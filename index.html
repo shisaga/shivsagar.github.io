@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <nav>
+        <img class = 'img-nav' width = '100px'src="https://web.archive.org/web/20180830125601js_/http://seanhalpin.io/assets/img/content/home/hello/me.svg" alt="">
+        <div  class =" sett" >
+            <ul class = 'nav-list'>
+                <li>About </li>
+                <li>Work</li>
+                <li>Projects</li>
+            </ul>
+        </div>
+        
+    </nav>
+    <div class = 'head'>
+         <img  class ='cloud'src="cloud.png" alt="">
+         <h1> I'am Shiv sagar.</h1>
+         <h2> a Web-Devloper and Programer</h2>
+         <img class ='cloud2' src="cloud.png" alt="">
+         <img src="https://web.archive.org/web/20180831175228/http://seanhalpin.io/assets/img/content/home/masthead/land.svg" alt="">
+    </div>
+
+    <div class="mid">
+        <div class ='img'><img src="https://web.archive.org/web/20180830125601js_/http://seanhalpin.io/assets/img/content/home/hello/me.svg" width="200px" height="210px" alt=""></div>
+        <h2 style ='font-size:200%;'>Hello.</h2>
+       <div class="para">
+        <p>
+
+            I Am a web Developer with robust problem-solving💻 skills and proven experience in creating and designing web-applications🥇 in a test-driven environment.
+           </p>
+       </div>
+
+
+    </div>
+    <hr>
+
+    <div class="mid2-skil">
+       
+        <h2 style ='font-size:200%;'>My Skills.</h2>
+
+       <div class="para1">
+        <img  class='sk2'src="computer.png"  width='100px'alt="">
+        
+        <div class="para-s">
+            <h3>Web Development & designing</h3>
+            <p>
+I am a web developer with an amazing ability to develop websites that are both functional and aesthetically pleasing. I have a strong understanding of web standards and best practices, and I am passionate about creating websites that users will find easy to use and visually appealing
+           
+           </p></div>
+           
+       </div>
+
+
+       <div class="para1">
+        
+        <div class="para-s">
+            <h3>Creative Thinking</h3>
+            <p>
+
+            I have good creative thinking ,anlatical skill and Communication skill which help me for better team-work ,analiysis and manymore
+           </p></div>
+           <img  class='sk2'src="https://cdn-icons-png.flaticon.com/512/2553/2553267.png"  width='100px'alt="">
+       </div>
+
+
+       <div class="para1">
+        <img  class='sk2'src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png"  width='500px'alt="">
+        <div class="para-s">
+            <h3>Programing</h3>
+            <p>
+
+                I am also proficient in a variety of programming languages and tools, and I have a proven track record of delivering successful projects on time and within budget. I am a team player who is always willing to lend a helping hand, and I am confident in my ability to contribute to any project. 
+           </p></div>
+       </div>
+
+
+   
+
+
+    </div>
+
+    <hr>
+    <div class="contactme">
+        <h2 style ='font-size:200%;'>Get In Touch !</h2>
+        <h3> I’m currently available for freelance work. </h3>
+        <div class = 'para10'>
+            <p style ='font-weight: bold;'>
+                If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.  </p>
+        </div>
+
+         <form action="#">
+            <button  class ='btn'> <img src="email.png"  height="26px" class = 'icon'width='32px'alt=""> MESSAGE ME
+            </button>
+         </form>
+
+    </div>
+
+    <footer>
+        <div class ='list'><ul>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">website</a></li>
+        </ul></div>
+        <div>
+            <p class = 'foot'>&copy;2022 Shiv sagar @Junior web Devloper
+            </p>
+        </div>
+    </footer>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(()=>{
+        var position = $(window).scrollTop(); 
+
+// should start at 0
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > position) {
+        console.log(scroll);
+        $('nav').slideUp(2000)
+     
+    } else {
+         console.log(scroll);
+         $('nav').slideDown(2000)
+    }
+    position = scroll;
+});
+   
+    })
+</script>
+
+
+
+    
+</body>
+
+
+</html>
